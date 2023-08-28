@@ -36,25 +36,33 @@
         font-family: "Space Grotesk";
     }
 
-    ol {
+    .rules-list {
         list-style-type: none;
         counter-reset: item;
     }
 
-    ol li {
+    .rules-list li {
         counter-increment: item;
         position: relative;
         font-family: "Space Grotesk";
         font-size: 16px;
         font-weight: 500;
+        padding-bottom: 11px;
+        padding-right: 20px;
     }
 
-    ol ::before {
+    .rules-list ::before {
         content: counter(item);
         position: absolute;
-        left: -5px;
+        left: -19px;
         font-weight: 700;
         font-size: 16px;
         font-family: "Space Grotesk";
+    }
+
+    .check-icon {
+        position: absolute;
+        right: 156px;
+        bottom: 110px;
     }
 }
