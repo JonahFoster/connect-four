@@ -24,20 +24,12 @@
     .logo {
       padding-bottom: 50px;
     }
-  
-    .list-items {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 30px;
-    }
 
     a {
       font-size: 24px;
       padding-left: 20px;
     }
-  
+
     .pvp-button {
       width: 335px;
       height: 72px;

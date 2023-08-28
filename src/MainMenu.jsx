@@ -1,18 +1,18 @@
 import logo from './assets/images/logo.svg'
 import players from './assets/images/player-vs-player.svg'
 import { Link } from 'react-router-dom';
-import './MainMenu.css'
+import styles from './MainMenu.module.css'
 
 function MainMenu() {
 
   return (
     <nav>
-      <img className='logo'src={logo} alt="" />
-      <Link to="/game" className='pvp-button'>
+      <img className={styles['logo']}src={logo} alt="" />
+      <Link to="/game" className={styles['pvp-button']}>
         <p>PLAY VS PLAYER</p>
-        <img className='pvp-button-img' src={players} alt="" />
+        <img className={styles[`pvp-button-img`]} src={players} alt="" />
       </Link>
-      <Link to="/gamerules" className='rules-button'>
+      <Link to="/gamerules" className={styles['rules-button']}>
         <p>GAME RULES</p>
       </Link>
     </nav>
