@@ -1,5 +1,6 @@
 import logo from './assets/images/logo.svg'
-import board from './assets/images/board-layer-white-small.svg'
+import whiteBoard from './assets/images/board-layer-white-small.svg'
+import blackBoard from './assets/images/board-layer-black-small.svg'
 import player1 from './assets/images/player-one.svg'
 import player2 from './assets/images/player-two.svg'
 import styles from './Game.module.css'
@@ -26,7 +27,8 @@ function Game() {
         </div>
       </div>
       <div className={styles['game-board-container']}>
-        <img className={styles['game-board']} src={board} />
+        <img className={styles['game-board-white']} src={whiteBoard} />
+        <img className={styles['game-board-black']} src={blackBoard} />
       </div>
     </div>
   )

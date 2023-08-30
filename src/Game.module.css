@@ -81,7 +81,7 @@
       flex-direction: column;
     }
 
-    .game-board {
-      padding: 0 20px;
+    .game-board-white {
+      position: absolute;
     }
   }
